@@ -1,0 +1,18 @@
+.searchBar__default {
+   padding: 5px 10px;
+   border-radius: 6px;
+   outline: none;
+   width: 100%;
+   border: 2px solid $secondary;
+   font-size: 14px;
+
+   &::-webkit-search-cancel-button {
+      filter: invert(52%) sepia(86%) saturate(98%) hue-rotate(170deg)
+         brightness(95%) contrast(86%);
+      cursor: pointer;
+   }
+
+   &:focus {
+      border: 2px outset $secondary;
+   }
+}

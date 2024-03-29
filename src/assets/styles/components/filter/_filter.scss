@@ -1,0 +1,119 @@
+.filter {
+   width: 100%;
+
+   &-container {
+      position: relative;
+
+      &__display {
+         padding: 4px 8px;
+         border: 1px solid $accent;
+         border-radius: 6px;
+         display: flex;
+         flex-wrap: wrap;
+         align-items: center;
+
+         &-empty {
+            height: 32px;
+            display: flex;
+            align-items: center;
+            padding-left: 5px;
+            margin-left: 5px;
+         }
+
+         &-pills {
+            border: 1px solid $text;
+            border-radius: 24px;
+            padding: 4px 8px;
+            margin: 4px;
+            display: inline-flex;
+            gap: 10px;
+            align-items: center;
+            transition: transform 0.3s ease-in-out;
+
+            &:hover {
+               box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+               transform: scale(1.05);
+               cursor: pointer;
+            }
+
+            &-close {
+               transition: transform 0.3s ease-in-out;
+
+               &:hover {
+                  transform: rotate(180deg);
+                  color: $cancel;
+               }
+            }
+         }
+         &-search {
+            outline: none;
+            border: none;
+            border-left: 2px inset $text;
+            padding-left: 5px;
+            margin-left: 5px;
+            flex-grow: 1;
+            height: 32px;
+
+            &::-webkit-search-cancel-button {
+               filter: invert(52%) sepia(86%) saturate(98%) hue-rotate(170deg)
+                  brightness(95%) contrast(86%);
+               cursor: pointer;
+            }
+         }
+
+         &-search-empty {
+            outline: none;
+            border: none;
+            padding-left: 5px;
+            margin-left: 5px;
+            flex-grow: 1;
+            height: 32px;
+
+            &::-webkit-search-cancel-button {
+               filter: invert(52%) sepia(86%) saturate(98%) hue-rotate(170deg)
+                  brightness(95%) contrast(86%);
+               cursor: pointer;
+            }
+         }
+      }
+      &__options {
+         position: absolute;
+         top: 100%;
+         width: 100%;
+         border: 1px solid $text;
+         z-index: 9;
+         border-radius: 8px;
+         left: 0;
+         max-height: 350px;
+         min-height: fit-content;
+         overflow: auto;
+         box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.3);
+
+         &-list {
+            list-style-type: none;
+            background-color: $background-light;
+            padding: 0 10px;
+
+            &-item {
+               padding: 10px 0;
+               border-bottom: 1px solid $text;
+               transition: all 0.3s;
+               cursor: pointer;
+               display: flex;
+               align-items: center;
+               column-gap: 10px;
+
+               &:hover {
+                  padding: 10px 0 10px 10px;
+                  background-color: $background;
+                  border-radius: 4px;
+               }
+
+               &:last-child {
+                  border-bottom: none;
+               }
+            }
+         }
+      }
+   }
+}

@@ -1,0 +1,80 @@
+.singleCard {
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+   justify-content: space-between;
+   padding: 20px;
+   width: calc(33.33% - 20px);
+   box-sizing: border-box;
+   background-color: $background-dark;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   padding: 16px;
+
+   &:hover {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+   }
+
+   @media (max-width: 768px) {
+      width: calc(50% - 15px);
+   }
+
+   @media (max-width: 588px) {
+      width: 100%;
+   }
+
+   &__title-section {
+      border-bottom: 1px solid $text;
+      padding-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &-title {
+         margin: 0;
+         font-size: 18px;
+         font-family: "Pacifico", cursive;
+         text-transform: uppercase;
+         letter-spacing: 1.5px;
+
+         @media (max-width: 768px) {
+            font-size: 16px;
+         }
+      }
+
+      &-symbol {
+         cursor: pointer;
+         font-size: 16px;
+         transition: transform 0.3s ease-in-out;
+
+         &:hover {
+            color: $cancel;
+            transform: rotate(180deg);
+         }
+      }
+   }
+
+   &__content {
+      font-size: 16px;
+      margin-bottom: 12px;
+   }
+
+   &__tags {
+      display: flex;
+      gap: 5px;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+
+      &-single {
+         background-color: $main;
+         color: $background;
+         border-radius: 4px;
+         padding: 4px 8px;
+         margin-right: 8px;
+         margin-bottom: 8px;
+         font-size: 14px;
+         font-weight: 800;
+         list-style: none;
+      }
+   }
+}

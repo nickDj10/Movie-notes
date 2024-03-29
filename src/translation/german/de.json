@@ -1,0 +1,14 @@
+{
+   "searchComponent": "Filme nach titel suchen ...",
+   "searchFilter": "Suchoption ...",
+   "filterText": "Filter",
+   "homePageTitle": "Filmnotiz-Projekt",
+   "homePageButton": "Neue bewertung",
+   "homePageGallery": "Galerie",
+   "formTitle": "Neue filmkritik hinzufügen",
+   "formMovie": "Filmtitel",
+   "formMoviePlaceholder": "Filmtitel eingeben",
+   "formReview": "Geben sie ihre filmkritik ein",
+   "formGenre": "Filmgenre auswählen",
+   "formSubmitBtn": "Absenden !"
+}

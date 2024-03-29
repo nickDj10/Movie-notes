@@ -1,0 +1,64 @@
+.formContainer {
+   padding: 20px 0;
+
+   &__section {
+      padding: 5px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      &-label {
+         display: block;
+         font-weight: bold;
+      }
+
+      &-input {
+         padding: 6px 8px;
+         border: 1px solid $secondary;
+         border-radius: 8px;
+         outline: 0px;
+      }
+      &-textarea {
+         padding: 8px;
+         min-height: 150px;
+         border: 1px solid $secondary;
+         border-radius: 8px;
+         font-size: 14px;
+         outline: 0px;
+         resize: vertical;
+      }
+      &-select {
+         font-size: 14px;
+         border: none;
+         width: 100%;
+         background-color: $background;
+
+         option {
+            border: 1px solid $secondary;
+            padding: 5px;
+         }
+      }
+
+      &-button {
+         display: inline-block;
+         margin: auto;
+         padding: 10px 20px;
+         font-size: 16px;
+         font-weight: bold;
+         text-align: center;
+         text-decoration: none;
+         cursor: pointer;
+         border: 2px solid $main;
+         border-radius: 5px;
+         color: $background;
+         margin-top: 15px;
+         background-color: $main;
+         transition: background-color 0.3s ease;
+
+         &:hover {
+            background-color: $main-dark;
+            border: 2px solid $main-dark;
+         }
+      }
+   }
+}

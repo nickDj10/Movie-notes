@@ -1,0 +1,14 @@
+{
+   "searchComponent": "Search movies by title ...",
+   "searchFilter": "Search option ...",
+   "filterText": "Filter",
+   "homePageTitle": "Movie note project",
+   "homePageButton": "New review",
+   "homePageGallery": "Gallery",
+   "formTitle": "Add new movie review",
+   "formMovie": "Movie name",
+   "formMoviePlaceholder": "Enter movie title",
+   "formReview": "Enter your movie review",
+   "formGenre": "Select movie genre",
+   "formSubmitBtn": "Submit !"
+}
